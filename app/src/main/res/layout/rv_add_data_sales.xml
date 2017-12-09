@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="20dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="5dp"
+
+    android:id="@+id/cardView"
+
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_rv_add_sale"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+
+            android:layout_marginTop="10sp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                android:id="@+id/tvDate"
+                android:gravity="center"
+                android:text="Date:  "/>
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/ivDelete"
+    android:src="@drawable/menu_delete"/>
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="20sp"-->
+                <!--android:id="@+id/tvDate"-->
+                <!--android:text="Your Category Category"/>-->
+        </LinearLayout>
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="10dp"-->
+            <!--android:layout_marginTop="20sp"-->
+            <!--android:orientation="horizontal">-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="20sp"-->
+                <!--android:text="Client Name:  "/>-->
+
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="20sp"-->
+                <!--android:id="@+id/tvClientName"-->
+                <!--android:text="Your Category Category"/>-->
+        <!--</LinearLayout>-->
+
+
+
+
+
+        <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_marginTop="10sp"
+    android:orientation="horizontal">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="15sp"
+    android:text="Category:  "/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:id="@+id/tvCategory"
+            android:text="Your Category Category"/>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="10sp"
+        android:orientation="horizontal">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Product: "/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:id="@+id/tvProducts"
+            android:text="Your Products"/>
+
+
+</LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="10sp">
+
+
+        <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_weight="0"
+    android:text="Price :"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:id="@+id/tvPrice"
+            android:text=":Price"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="10sp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_weight="0"
+            android:text="Quantity"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:id="@+id/tvQuantity"
+            android:text=":Quantity"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="10sp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_weight="0"
+            android:text="Total per product"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:id="@+id/tvTotalPrice"
+            android:text=":Total Price Per product"/>
+
+    </LinearLayout>
+
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_margin="3dp"-->
+            <!--android:background="#D3D3D3"-->
+
+
+            <!--/>-->
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</android.support.v7.widget.CardView>

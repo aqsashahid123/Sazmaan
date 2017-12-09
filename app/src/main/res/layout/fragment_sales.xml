@@ -1,0 +1,178 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context="octapult.com.sazmaan.Fragments.SalesFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/hello_blank_fragment" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="#fff">
+
+            <TextView
+                android:text="       "
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:gravity="center"
+
+                />
+
+
+            <TextView
+                android:text="Volume"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:gravity="center"
+
+                />
+
+            <TextView
+                android:text="Price"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:gravity="center"
+
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="#fff">
+
+            <TextView
+                android:text="Bedding"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:gravity="center"
+
+                />
+
+
+            <TextView
+                android:text="Volume"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:gravity="center"
+                android:id="@+id/tvBeddingCount"
+
+                />
+
+            <TextView
+                android:text="Price"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:gravity="center"
+                android:id="@+id/tvBeddingPaid"
+
+                />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="#fff">
+
+            <TextView
+                android:text="Cushions"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:gravity="center"
+
+                />
+
+
+            <TextView
+                android:text="Volume"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:gravity="center"
+                android:id="@+id/tvCushionCount"
+
+                />
+
+            <TextView
+                android:text="Price"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:id="@+id/cushionPrice"
+                android:padding="10dp"
+                android:gravity="center"
+
+                />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="#fff">
+
+            <TextView
+                android:text="Accessories"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:gravity="center"
+
+                />
+
+
+            <TextView
+                android:text="Volume"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:gravity="center"
+                android:id="@+id/accessoriesCount"
+
+                />
+
+            <TextView
+                android:text="Price"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:gravity="center"
+                android:id="@+id/accessoriesPrice"
+
+                />
+
+        </TableRow>
+
+
+
+
+
+
+
+
+
+
+    </TableLayout>
+
+
+
+</FrameLayout>

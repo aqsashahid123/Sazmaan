@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<group android:checkableBehavior="single">
+
+    <item
+        android:title="Dashboard"
+        android:id="@+id/dashboard"
+
+
+        ></item>
+</group>
+
+<item android:title="Sales">
+
+        <menu>
+
+            <item
+                android:title="add sale"
+                android:id="@+id/addSale"
+                android:icon="@drawable/icon_add_sale"
+                />
+
+<item android:title="Manage Sales"
+    android:icon="@drawable/manage_sale"/>
+
+
+        </menu>
+
+
+
+
+    </item>
+
+
+</menu>

@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+   <android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="octapult.com.sazmaan.Activities.BillingActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+    <include
+        layout="@layout/app_bar"
+        android:id="@+id/appBar"
+        />
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/etDate"
+                android:textColor="#B56824"
+                android:padding="10dp"
+                android:text="Sub Amount"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/tvSubAmount"
+
+                android:textColor="#B56824"
+                android:padding="10dp"
+                android:text="Date"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/tvGST"
+                android:textColor="#B56824"
+                android:padding="10dp"
+                android:text="GST"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/tvGst"
+
+                android:textColor="#B56824"
+                android:padding="10dp"
+                android:text="Date"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+
+                android:textColor="#B56824"
+                android:padding="10dp"
+                android:text="Total Amount"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/tvTotalAmount"
+
+                android:textColor="#B56824"
+                android:padding="10dp"
+                android:text="Date"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+
+                android:textColor="#B56824"
+                android:padding="10dp"
+                android:text="Grand Total"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+
+                android:id="@+id/tvGrandTotal"
+                android:textColor="#B56824"
+                android:padding="10dp"
+                android:text="Date"/>
+
+
+        </LinearLayout>
+        <com.github.florent37.materialtextfield.MaterialTextField
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mtf_cardCollapsedHeight="4dp"
+            app:mtf_image="@drawable/user"
+            android:textAlignment="center"
+            app:mtf_labelColor="#B56824"
+            app:mtf_backgroundColor="#FBF4E2"
+            app:mtf_openKeyboardOnFocus="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+
+            android:padding="10dp"
+
+            >
+
+            <EditText
+                android:id="@+id/etPaidAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" Paid Amount "
+                android:background="#89BCEB"
+                android:textColor="#000"
+
+
+                android:textSize="15sp"
+                android:singleLine="true"
+                />
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+
+                android:textColor="#B56824"
+                android:padding="10dp"
+                android:text="Due Amount"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+
+
+                android:textColor="#B56824"
+                android:padding="10dp"
+                android:id="@+id/tvDueAmount"
+                android:text="Due Amount"/>
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+
+            android:textColor="#B56824"
+            android:padding="10dp"
+            android:text="Payment Type"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:id="@+id/paymentType"
+                android:background="#fff"
+
+
+                />
+
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+
+            android:textColor="#B56824"
+            android:padding="10dp"
+            android:text="Payment Status"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:id="@+id/paymentStatus"
+                android:background="#fff"
+
+
+                />
+
+
+
+        </LinearLayout>
+
+        <Button
+
+            android:id="@+id/btnBilling"
+            android:text="Submit!"
+
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+
+            android:textColor="#B56824"
+            android:background="@drawable/bg_btn_login"
+
+
+
+            />
+
+
+    </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        app:menu="@menu/drawer_menu"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/navigation_view"
+        />
+
+
+
+
+
+</android.support.v4.widget.DrawerLayout>

@@ -3,10 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context="octapult.com.sazmaan.Activities.MainActivity">
-
+    android:orientation="vertical"
+    tools:context="octapult.com.sazmaan.Activities.LoginActivity">
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -18,46 +17,12 @@
 
 
 
-    <com.github.florent37.materialtextfield.MaterialTextField
-        android:id="@+id/input_email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-
-        app:mtf_cardCollapsedHeight="4dp"
-        app:mtf_image="@drawable/user"
-        android:textAlignment="center"
-        app:mtf_labelColor="#B56824"
-        app:mtf_openKeyboardOnFocus="true"
-        app:mtf_backgroundColor="#FBF4E2"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-
-        android:padding="10dp"
-
-        >
-
-        <EditText
-            android:id="@+id/etemail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint=" Email "
-            android:background="#89BCEB"
-            android:textColor="#000"
-
-
-            android:textSize="15sp"
-            android:singleLine="true"
-            />
-    </com.github.florent37.materialtextfield.MaterialTextField>
-
 
     <com.github.florent37.materialtextfield.MaterialTextField
         android:id="@+id/input_username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
 
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
@@ -125,35 +90,35 @@
 
 
     <!--<EditText-->
-        <!--android:id="@+id/etEmail"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:drawableLeft="@drawable/password"-->
-        <!--android:drawablePadding="10dp"-->
-        <!--android:layout_marginLeft="20dp"-->
-        <!--android:layout_marginRight="20dp"-->
-        <!--android:hint="|   Email or Username"-->
-        <!--android:backgroundTint="#B56824"-->
-        <!--android:textColor="#555"-->
-        <!--android:paddingLeft="20dp"-->
-        <!--android:paddingRight="20dp"-->
-        <!--android:layout_marginTop="20dp"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--/>-->
+    <!--android:id="@+id/etEmail"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:drawableLeft="@drawable/password"-->
+    <!--android:drawablePadding="10dp"-->
+    <!--android:layout_marginLeft="20dp"-->
+    <!--android:layout_marginRight="20dp"-->
+    <!--android:hint="|   Email or Username"-->
+    <!--android:backgroundTint="#B56824"-->
+    <!--android:textColor="#555"-->
+    <!--android:paddingLeft="20dp"-->
+    <!--android:paddingRight="20dp"-->
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--/>-->
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="150dp"
         android:gravity="center"
+        android:layout_marginTop="20dp"
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btnSignup"
+            android:id="@+id/btnLogin"
             android:layout_width="80dp"
 
             android:layout_height="80dp"
             android:textColor="#B56824"
-
             android:background="@drawable/bg_btn_login"
-            android:text="Sign up" />
+            android:text="Log in" />
     </LinearLayout>
 </LinearLayout>
