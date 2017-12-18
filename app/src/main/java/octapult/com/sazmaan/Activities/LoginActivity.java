@@ -81,18 +81,14 @@ public class LoginActivity extends AppCompatActivity {
 
             @Override
             public void onResponse(String response) {
-
+           // Toast.makeText(getApplicationContext(),response,Toast.LENGTH_SHORT).show();
                 loading.dismiss();
                 String checkCredentials=response.trim().toString();
-                Toast.makeText(getApplicationContext(),response.toString(),Toast.LENGTH_SHORT).show();
-                if(checkCredentials.equals("username or email already exist")){
-                    // Toast.makeText(MainActivity.this, "Incorrect Email or Password", Toast.LENGTH_SHORT).show();
-                }
-                else {
+
                     try {
                         JSONObject jsonResponse = new JSONObject(response);
 
-                        String user_id = jsonResponse.getString("userID").toString();
+                        String user_id = jsonResponse.getString("userID");
 //                        String user_name = jsonResponse.get("username").toString();
 //                        String email = jsonResponse.get("email").toString();
 
@@ -115,7 +111,7 @@ public class LoginActivity extends AppCompatActivity {
                     }
 
 
-                }
+
             }
 
         }

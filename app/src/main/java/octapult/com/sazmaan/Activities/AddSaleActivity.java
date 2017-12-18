@@ -55,8 +55,6 @@ public class AddSaleActivity extends AppCompatActivity {
     String productName,productQuantity, totalRateString;
     String rate;
 
-
-    Toolbar toolbar;
     String price;
     DrawerLayout drawerLayout;
     NavigationView navigationView;
@@ -86,7 +84,7 @@ public class AddSaleActivity extends AppCompatActivity {
     EditText etQuantity;
     AddSaleAdapter adapter;
     Calendar calendar;
-
+    Toolbar toolbar;
     List<String> prodIdList;
 
     public static int acuratePrice = 0;
@@ -128,6 +126,13 @@ public class AddSaleActivity extends AppCompatActivity {
 
         navigationView = (NavigationView) findViewById(R.id.nav_view);
         drawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
+
+
+
+
+
+
+
         etQuantity = (EditText) findViewById(R.id.etQuantity);
 
 
@@ -268,6 +273,30 @@ public class AddSaleActivity extends AppCompatActivity {
                         startActivity(intent);
 
                         break;
+
+                    case R.id.addSale:
+                        drawerLayout.closeDrawer(Gravity.END);
+                        // Toast.makeText(getApplicationContext(),"Add Sale", Toast.LENGTH_SHORT).show();
+                        Intent addSaleIntent = new Intent(getApplicationContext(), AddSaleActivity.class);
+                        startActivity(addSaleIntent);
+                        break;
+
+                    case R.id.graph:
+                        drawerLayout.closeDrawer(Gravity.END);
+                        // Toast.makeText(getApplicationContext(),"Add Sale", Toast.LENGTH_SHORT).show();
+                        Intent graphIntent = new Intent(getApplicationContext(), GraphActivity.class);
+                        startActivity(graphIntent);
+
+                        break;
+                    case R.id.salesReport:
+                        //    drawerLayout.closeDrawer(Gravity.END);
+                        //   Toast.makeText(getApplicationContext(),"Add Sale", Toast.LENGTH_SHORT).show();
+                        Intent salesReportIntent = new Intent(getApplicationContext(), SalesReportActivity.class);
+                        startActivity(salesReportIntent);
+
+                        break;
+
+
 
                 }
 

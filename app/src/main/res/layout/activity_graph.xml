@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="octapult.com.sazmaan.GraphActivity">
+    tools:context="octapult.com.sazmaan.Activities.GraphActivity">
 
     <com.jjoe64.graphview.GraphView
         android:layout_width="match_parent"
@@ -14,8 +14,34 @@
 
 
         android:id="@+id/graph" />
+<!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal">-->
+    <!--<ImageView-->
+        <!--android:layout_width="3dp"-->
+        <!--android:layout_height="3dp"-->
+        <!--android:background="@color/colorRed"/>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Expenses"/>-->
+    <!--<ImageView-->
+        <!--android:layout_width="3dp"-->
+        <!--android:layout_height="3dp"-->
+        <!--android:background="@color/colorPrimaryDark"/>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="sales"/>-->
 
 
+
+
+
+<!--</LinearLayout>-->
 
 
 </RelativeLayout>

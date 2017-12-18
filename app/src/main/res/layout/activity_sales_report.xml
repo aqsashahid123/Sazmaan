@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fff"
+
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical"
+    tools:context="octapult.com.sazmaan.Activities.SalesReportActivity">
+
+    <include
+        layout="@layout/app_bar"
+
+        android:id="@+id/appBar"
+
+        />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/appBar"
+    android:id="@+id/laLa"
+    android:orientation="vertical">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Total: "
+           android:visibility="gone"
+            android:id="@+id/plainText"
+           android:padding="10dp"
+           android:textSize="15sp"
+           android:textStyle="bold"
+
+           android:textColor="#B56824"
+
+           android:layout_gravity="left"
+           android:gravity="left"/>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Total"
+           android:id="@+id/tvTotaAmount"
+           android:padding="10dp"
+           android:textSize="15sp"
+           android:textStyle="bold"
+           android:layout_weight="1"
+           android:textColor="#B56824"
+            android:visibility="gone"
+           android:layout_gravity="left"
+           android:gravity="left"/>
+
+
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GENERATE EXCEL REPORT"
+        android:id="@+id/tvGenerateExcel"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#B56824"
+        android:visibility="gone"
+        android:layout_gravity="right"
+        android:gravity="right"/>
+
+
+   </LinearLayout>
+
+<!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:visibility="gone"-->
+    <!--android:id="@+id/scView">-->
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rvHeader"
+                android:layout_marginTop="4dp"
+                android:scrollbarStyle="outsideInset"
+                android:visibility="gone"
+                android:scrollbars="horizontal"
+
+
+                />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rvSalesData"
+        android:scrollbarStyle="outsideInset"
+
+        android:scrollbars="horizontal"
+
+
+        />
+
+
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+<!--</ScrollView>-->
+    <!--<LinearLayout-->
+        <!--android:layout_width=""-->
+        <!--android:layout_height=""></LinearLayout>-->
+    <!---->
+
+    <!--<LinearLayout-->
+        <!--android:orientation="vertical"-->
+        <!--android:id="@+id/contentView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_height="match_parent">-->
+    <!--</LinearLayout>-->
+    <!--<com.allyants.boardview.BoardView-->
+        <!--xmlns:boardview="http://schemas.android.com/apk/res-auto/com.allyants.boardview"-->
+        <!--boardview:boardItemBackground="@color/colorPrimary"-->
+
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:id="@+id/boardView"-->
+
+        <!--android:visibility="gone"/>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/laStartDate"
+        android:padding="20dp"
+        android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:textColor="#B56824"
+        android:layout_weight="1"
+        android:gravity="center"
+
+        android:text="Start Date"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="17sp"
+            android:textColor="#B56824"
+            android:gravity="center"
+            android:id="@+id/tvStartDate"
+            android:text=""/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="20dp"
+        android:id="@+id/laEndDate"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#B56824"
+            android:text="End Date"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="17sp"
+            android:textColor="#B56824"
+            android:gravity="center"
+            android:id="@+id/tvEndDate"
+            android:text=""/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        android:textColor="#B56824"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_btn_login"
+        android:id="@+id/btnGenerateReport"
+        android:text="View Data"/>
+
+    <!--<Button-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="40dp"-->
+    <!--android:layout_gravity="center"-->
+        <!--android:visibility="gone"-->
+        <!--android:id="@+id/btnGenerateExcel"-->
+    <!--android:text="Genet=rate Excel"/>-->
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/laLa"
+        android:gravity="right"
+        android:layout_alignParentBottom="true"
+        >
+
+
+
+    </LinearLayout>
+</RelativeLayout>
+

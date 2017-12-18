@@ -33,6 +33,8 @@ public class Dashboard extends AppCompatActivity {
     DrawerLayout drawerLayout;
     NavigationView nav_view;
 
+
+
     private TabLayout tabLayout;
     private ViewPager viewPager;
 
@@ -73,10 +75,36 @@ public class Dashboard extends AppCompatActivity {
 
             switch (item.getItemId())
             {
+
+                case R.id.dashboard:
+                    drawerLayout.closeDrawer(Gravity.END);
+
+
+                    break;
                 case R.id.addSale:
-                    Toast.makeText(getApplicationContext(),"Add Sale", Toast.LENGTH_SHORT).show();
+                    drawerLayout.closeDrawer(Gravity.END);
+                   // Toast.makeText(getApplicationContext(),"Add Sale", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(getApplicationContext(), AddSaleActivity.class);
                     startActivity(intent);
+                    break;
+
+                case R.id.graph:
+                    drawerLayout.closeDrawer(Gravity.END);
+                   // Toast.makeText(getApplicationContext(),"Add Sale", Toast.LENGTH_SHORT).show();
+                    Intent graphIntent = new Intent(getApplicationContext(), GraphActivity.class);
+                    startActivity(graphIntent);
+
+                    break;
+                case R.id.salesReport:
+                //    drawerLayout.closeDrawer(Gravity.END);
+                 //   Toast.makeText(getApplicationContext(),"Add Sale", Toast.LENGTH_SHORT).show();
+                    Intent salesReportIntent = new Intent(getApplicationContext(), SalesReportActivity.class);
+                    startActivity(salesReportIntent);
+
+                    break;
+
+
+
 
             }
                 return true;

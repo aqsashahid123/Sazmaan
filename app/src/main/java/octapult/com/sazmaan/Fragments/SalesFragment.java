@@ -90,8 +90,8 @@ public class SalesFragment extends Fragment {
         StringRequest request = new StringRequest(Request.Method.POST, EndPoints.BEDING_SALES, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-                Toast.makeText(getActivity().getApplicationContext(),response,Toast.LENGTH_SHORT).show();
-                pd.dismiss();
+             //   Toast.makeText(getActivity().getApplicationContext(),response,Toast.LENGTH_SHORT).show();
+
                 try {
 //                    JSONArray arrr = new JSONArray(response);
                      JSONObject object = new JSONObject(response);
@@ -141,8 +141,8 @@ public class SalesFragment extends Fragment {
         StringRequest reques = new StringRequest(Request.Method.POST, EndPoints.CUSHION_SALE, new Response.Listener<String>() {
             @Override
             public void onResponse(String respons) {
-                Toast.makeText(getActivity().getApplicationContext(),respons,Toast.LENGTH_SHORT).show();
-                pd.dismiss();
+              //  Toast.makeText(getActivity().getApplicationContext(),respons,Toast.LENGTH_SHORT).show();
+             //   pd.dismiss();
                 try {
 //                    JSONArray arrr = new JSONArray(response);
                     JSONObject object = new JSONObject(respons);
@@ -195,7 +195,7 @@ public class SalesFragment extends Fragment {
         StringRequest requ = new StringRequest(Request.Method.POST, EndPoints.ACCESSORIES_SALE, new Response.Listener<String>() {
             @Override
             public void onResponse(String respon) {
-                Toast.makeText(getActivity().getApplicationContext(),respon,Toast.LENGTH_SHORT).show();
+              //  Toast.makeText(getActivity().getApplicationContext(),respon,Toast.LENGTH_SHORT).show();
                 pd.dismiss();
                 try {
 //                    JSONArray arrr = new JSONArray(response);

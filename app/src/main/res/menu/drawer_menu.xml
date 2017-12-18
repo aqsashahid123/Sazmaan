@@ -1,14 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
 <group android:checkableBehavior="single">
 
     <item
         android:title="Dashboard"
         android:id="@+id/dashboard"
+        android:icon="@drawable/icon_dashboard"
+        />
 
 
-        ></item>
+    <!--<item-->
+        <!--android:title="Reports"-->
+        <!--android:id="@+id/showReports"-->
+        <!--android:icon="@drawable/icon_reports"-->
+
+
+        <!--/>-->
+    <item
+        android:title="Graphs"
+        android:id="@+id/graph"
+        android:icon="@drawable/icon_graph"
+
+        />
+
+
+
+
 </group>
 
 <item android:title="Sales">
@@ -31,6 +50,28 @@
 
 
     </item>
+
+    <item android:title="Reports">
+
+        <menu>
+
+            <item android:title="Sales Report"
+
+                android:id="@+id/salesReport"
+                android:icon="@drawable/sales_reports"
+
+                />
+
+
+
+        </menu>
+
+
+
+
+
+    </item>
+
 
 
 </menu>

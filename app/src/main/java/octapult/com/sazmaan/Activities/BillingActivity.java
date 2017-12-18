@@ -92,20 +92,6 @@ public class BillingActivity extends AppCompatActivity {
         clientNumber =  getIntent().getExtras().getString("clientNumber");
         clientName =  getIntent().getExtras().getString("clientName");
         tvSubAmount.setText(total);
-
-//
-////        gstValue = Float.valueOf(gst);
-//        gstValue = Float.valueOf(gstS);
-//        //   tt = gstValue/100 * Integer.valueOf(total);
-//
-//        tt = gstValue/100 * Integer.parseInt(total);
-//
-//        totalAmount = Integer.valueOf(total) + tt;
-//        tvTotalAmount.setText(String.valueOf(totalAmount));
-//        tvGrandTotal.setText(String.valueOf(totalAmount));
-
-
-
         ////////////////////////////////////////////////////////////////////
         ArrayAdapter<String> regionAdapter = new ArrayAdapter<String>(BillingActivity.this, R.layout.bg_spinner_item, paymentTypeList);
 
@@ -142,69 +128,6 @@ public class BillingActivity extends AppCompatActivity {
 
 
                 postData();
-//                final ProgressDialog pd = new ProgressDialog(BillingActivity.this);
-//                pd.setMessage("loading");
-//                pd.show();
-//
-//                StringRequest request = new StringRequest(Request.Method.POST, EndPoints.CREATE_ORDER, new Response.Listener<String>() {
-//                    @Override
-//                    public void onResponse(String response) {
-//                    Toast.makeText(getApplicationContext(),response,Toast.LENGTH_SHORT).show();
-//                        pd.dismiss();
-//                        try {
-//
-//                        } catch (Exception e) {
-//                            e.printStackTrace();
-//                        }
-//                        // object.get("");
-//
-//                    }
-//                }, new Response.ErrorListener() {
-//                    @Override
-//                    public void onErrorResponse(VolleyError error) {
-//                        pd.dismiss();
-//                        //  Log.e("Error",error.printStackTrace());
-//                        Toast.makeText(getApplicationContext(), "Volley Error" + error, Toast.LENGTH_SHORT).show();
-//
-//                    }
-//                }
-//                ) {
-//                    @Override
-//                    protected Map<String, String> getParams() {
-//                        Map<String, String> params = new HashMap<String, String>();
-//                         params.put("orderDate", date);
-//                        params.put("clientName", clientName);
-//
-//                        params.put("clientContact", clientNumber);
-//                        params.put("subTotalValue",totalValue);
-//                        params.put("gstValue", gstS);
-//                        params.put("totalAmountValue", totalValue);
-//                        params.put("grandTotalValue", totalValue);
-//                        params.put("dueValue", tvDueAmount.getText().toString());
-//                        params.put("paid", etPaidAmount.getText().toString());
-//                        params.put("paymentType", paymentTypeSpinner.getSelectedItem().toString());
-//                        params.put("paymentStatus", paymentStatusSpinner.getSelectedItem().toString());
-//                        params.put("productName", productName);
-//                        params.put("quantity", productQuantity);
-//                        params.put("rateValue", rates);
-//                        params.put("totalValue",totalRateString);
-//                    //    params.put("password", password);
-//
-//
-//                        return params;
-//                    }
-//
-//
-//                };
-//                RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
-//                requestQueue.add(request);
-//
-//
-//
-//
-
-
-
 
 
 
@@ -293,7 +216,7 @@ public class BillingActivity extends AppCompatActivity {
             StringRequest request = new StringRequest(Request.Method.POST, EndPoints.CREATE_ORDER, new Response.Listener<String>() {
                 @Override
                 public void onResponse(String response) {
-                    Toast.makeText(getApplicationContext(),response,Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getApplicationContext(),response,Toast.LENGTH_SHORT).show();
                     pd.dismiss();
                     try {
 
